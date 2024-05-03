@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
             if no_count < x:
                 print("{}".format(element), end="")
                 no_count += 1
-    except ValueError:
+    except Exception:
         pass
     print()
     return(no_count)
